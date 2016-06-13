@@ -1,0 +1,10 @@
+name = Dhhoasen
+description = Dhhoasen Module
+package = Dhhoasen
+core = 7.x
+version = "7.x-0.5.0"
+project = "Dhhoasen"
+
+stylesheets[all][] = includes/css/dhhoasen.css
+
+files[] = includes/dhhoasen.controller.inc

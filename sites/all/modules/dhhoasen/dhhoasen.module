@@ -1,0 +1,33 @@
+<?php
+/**
+ * Implements hook_entity_info()
+ */
+function dhhoasen_entity_info(){
+  $info = array(
+    'telesales' => array(
+      'label' => t( 'Dhhoasen' ),
+      'controller class' => 'DhhoasenController',
+      'base table' => 'dhhoasen',
+      'fieldable' => FALSE,
+      'access callback' => 'dhhoasen_access',
+      'entity keys' => array(
+        'id' => 'id'
+      ),
+      'view modes' => array(
+        'full' => array(
+          'label' => t( 'Full content' ),
+          'custom settings' => TRUE
+        )
+      )
+    )
+  );
+  return $info;
+}
+
+/**
+ * Implements Function Access
+ */
+function dhhoasen_access(){
+  // @todo Last Update
+  return TRUE;
+}
